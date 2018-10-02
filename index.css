@@ -2,6 +2,16 @@ body{
 	color: black;
 }
 
+.noLink{
+	text-decoration: none;
+	color: #2d3436;
+}
+
+.noLink:hover{
+	text-decoration: none;
+	color: #2d3436;
+}
+
 .text-platzi{
 	color: #97c93e !important;
 }
@@ -13,6 +23,17 @@ body{
 
 .btn-platzi:hover {
 	background-color: #79A033 !important;
+}
+
+.btn-google{
+	background: white;
+	padding: 10px 15px;
+	transition: .4s;
+}
+
+.btn-google:hover{
+	transition: .4s;
+	transform: scale(.96);
 }
 
 #footer{
@@ -54,4 +75,8 @@ body{
 
 #place-time img{
 	max-width: 100%;
+}
+
+.text-form{
+	font-size: 20px;
 }

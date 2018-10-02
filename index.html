@@ -22,7 +22,6 @@
       <button class="navbar-toggler btn-platzi" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
@@ -38,7 +37,7 @@
         <a class="nav-link" href="#conviertete-en-orador">Participa</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-platzi font-weight-bold" href="#" data-toggle="modal" data-target="#modalCompra">Comprar tickets</a>
+        <a class="nav-link text-platzi font-weight-bold" href="#" data-toggle="modal" data-target="#modalCompra">Iniciar Sesion</a>
       </li>
     </ul>
   </div>
@@ -67,15 +66,19 @@
   <div class="overlay">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-12 col-lg-8 offset-lg-4 text-center text-lg-right">
+        <div class="col-12 col-lg-8 offset-lg-4 text-center text-lg-right mt-auto">
           <h1>Platzi Conf Hawaii</h1>
           <p class="d-none d-sm-block">Llega por primera vez a Hawaii para compartir con la comundad el conocimiento y experiencia de los profesionales que estan creando el futuro de internet. Conoce a los miembros del team platzi. </p>
-          <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
-          <button type="button" class="btn btn-platzi" data-toggle="modal" data-target="#modalCompra">Comprar tickets</button>
         </div>
+        <div class="col-6 col-lg-3 offset-lg-6 mb-auto">
+          <a href="#" class="btn btn-outline-light btn-block d-none d-sm-block">Quiero ser orador</a>
+        </div>
+        <div class="col-6 col-lg-3 mb-auto">
+            <button type="button" class="btn btn-platzi btn-block d-none d-sm-block" data-toggle="modal" data-target="#modalCompra">Comprar tickets</button>
         </div>
       </div>
     </div>
+  </div>
 </div>
 </main>
 <!-- End Carrousel -->
@@ -213,7 +216,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalCompraTitle">Tickets</h5>
+        <h5 class="modal-title" id="modalCompraTitle">Iniciar Sesión</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -221,6 +224,11 @@
       <form>
       <div class="modal-body">
           <div class="form-row">
+            <div class="col-12 mb-2">
+              <a href="#" class="btn-block shadow btn-google noLink text-form"><img src="assets/img/logo-google.png" width="20" class="mr-2">
+                Iniciar Sesión con Google
+              </a>
+            </div>
             <div class="col">
               <input type="text" class="form-control" placeholder="Nombre" required>
             </div>
